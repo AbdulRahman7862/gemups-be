@@ -3,6 +3,9 @@ const router = express.Router();
 const proxyProductController = require('../controllers/proxyProductController');
 const { authenticate, requireAdmin } = require('../middlewares/auth');
 
+// Pricing endpoint
+router.get('/pricing/:proxyId/:providerId', proxyProductController.getProxyPricing);
+
 // Admin-only
 router.post('/', authenticate, requireAdmin, proxyProductController.createProxyProduct);
 router.put('/:id', authenticate, requireAdmin, proxyProductController.updateProxyProduct);

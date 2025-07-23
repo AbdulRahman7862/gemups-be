@@ -69,4 +69,25 @@ exports.getProxyProduct = async (req, res, next) => {
   } catch (err) {
     next(err);
   }
+};
+
+exports.getProxyPricing = async (req, res, next) => {
+  try {
+    const { proxyId, providerId } = req.params;
+    const proxy = await ProxyProduct.findById(proxyId);
+    if (!proxy || !proxy.isActive || (proxy.provider !== providerId && String(proxy.provider) !== providerId)) {
+      return res.status(404).json({
+        success: false,
+        message: 'Proxy or provider not found',
+        data: []
+      });
+    }
+    return res.status(200).json({
+      success: true,
+      message: 'Pricing fetched successfully',
+      data: Array.isArray(proxy.pricing) ? proxy.pricing : []
+    });
+  } catch (err) {
+    next(err);
+  }
 }; 

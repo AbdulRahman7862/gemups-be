@@ -16,7 +16,15 @@ const sampleProducts = [
     rating: 4.8,
     availableDurations: [30, 60],
     supportedCountries: ['US', 'UK', 'CA'],
-    isActive: true
+    isActive: true,
+    Providers: [
+      { image: 'https://techedge.pro/wp-content/themes/gerold/assets/images/logos/logo-primary.png' }
+    ],
+    pricing: [
+      { quantity: 10, price: 5.0, isPopular: true },
+      { quantity: 20, price: 9.0, isPopular: false },
+      { quantity: 50, price: 20.0, isPopular: false }
+    ]
   },
   {
     name: 'ISP Proxy – ProxySeller',
@@ -30,7 +38,15 @@ const sampleProducts = [
     rating: 4.5,
     availableDurations: [30],
     supportedCountries: ['DE', 'FR'],
-    isActive: true
+    isActive: true,
+    Providers: [
+      { image: 'https://techedge.pro/wp-content/themes/gerold/assets/images/logos/logo-primary.png' }
+    ],
+    pricing: [
+      { quantity: 10, price: 6.0, isPopular: true },
+      { quantity: 25, price: 13.0, isPopular: false },
+      { quantity: 100, price: 45.0, isPopular: false }
+    ]
   }
 ];
 

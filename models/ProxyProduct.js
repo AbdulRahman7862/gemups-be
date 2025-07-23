@@ -48,7 +48,14 @@ const proxyProductSchema = new mongoose.Schema({
   isActive: {
     type: Boolean,
     default: true
-  }
+  },
+  pricing: [
+    {
+      quantity: { type: Number, required: true },
+      price: { type: Number, required: true },
+      isPopular: { type: Boolean, default: false }
+    }
+  ]
 }, { timestamps: true });
 
 module.exports = mongoose.model('ProxyProduct', proxyProductSchema); 

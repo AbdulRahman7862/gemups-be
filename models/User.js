@@ -18,7 +18,16 @@ const userSchema = new mongoose.Schema({
   isAdmin: {
     type: Boolean,
     default: false
-  }
+  },
+  walletBalance: {
+    type: Number,
+    default: 0
+  },
+  isGuest: {
+    type: Boolean,
+    default: false
+  },
+  // username: { type: String, trim: true }, // Optional
 }, { timestamps: true });
 
 userSchema.pre('save', async function(next) {
@@ -36,4 +45,4 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
   return bcrypt.compare(candidatePassword, this.password);
 };
 
-module.exports = mongoose.model('User', userSchema); 
+module.exports = mongoose.model('User', userSchema);

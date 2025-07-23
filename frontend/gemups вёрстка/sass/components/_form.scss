@@ -1,0 +1,279 @@
+.register__page {
+  .main__container {
+    padding-bottom: 0;
+    .container {
+      height: 100%;
+    }
+  }
+  .form__wrapper {
+    height: 100%;
+  }
+}
+.form {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 100px;
+  &__title {
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .flex__box {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .form-control {
+    &::placeholder {
+      color: #7a8895;
+    }
+  }
+  .link__text {
+    cursor: pointer;
+    color: #13f195;
+    text-decoration: underline;
+    transition: all 0.25s ease-in-out;
+  }
+}
+
+// .input__container {
+//   position: relative;
+//   width: 100%;
+//   z-index: 1;
+
+//   input {
+//     border: none;
+//     padding: 12px 16px;
+//     border-radius: 4px;
+
+//     &:hover + fieldset {
+//       border-color: rgb(19, 241, 149);
+//     }
+//   }
+
+//   fieldset {
+//     position: absolute;
+//     width: 100%;
+//     height: 54px;
+//     top: 0;
+//     left: 0;
+//     text-align: left;
+//     inset: -5px 0px 0px;
+//     border-radius: inherit;
+//     margin: 0px;
+//     padding: 0px 8px;
+//     pointer-events: none;
+//     border-radius: 4px;
+//     border-style: solid;
+//     border-width: 1px;
+//     overflow: hidden;
+//     min-width: 0%;
+//     border-color: rgba(0, 0, 0, 0.23);
+//     transition: all 0.2s linear;
+//   }
+
+//   legend {
+//     float: unset;
+//     width: auto;
+//     display: block;
+//     height: 11px;
+//     font-size: 0.75em;
+//     visibility: hidden;
+//     max-width: 0.01px;
+//     overflow: hidden;
+//     padding: 0px;
+//     transition: max-width 50ms cubic-bezier(0, 0, 0.2, 1);
+//     white-space: nowrap;
+//     text-align: left;
+
+//     span {
+//       padding-left: 5px;
+//       padding-right: 5px;
+//       display: inline-block;
+//       opacity: 0;
+//       visibility: visible;
+//     }
+//   }
+
+//   .input__form-label {
+//     color: rgb(122, 136, 149);
+//     text-align: left;
+//     font-size: 16px;
+//     transform: translate(16px, -12px) scale(1);
+//     position: absolute;
+//     top: 50%;
+//     left: 0;
+//     z-index: -1;
+//     transition: all 0.2s ease;
+//   }
+
+//   input:focus ~ .input__form-label,
+//   input:not(:placeholder-shown) ~ .input__form-label {
+//     transform: translate(3px, -36px) scale(0.75);
+//     color: #fff;
+//     z-index: 1;
+
+//     &.email {
+//       transform: translate(-5px, -36px) scale(0.75);
+//     }
+//     &.email-sm {
+//       transform: translate(8px, -36px) scale(0.75);
+//     }
+//     &.email-big {
+//       transform: translate(-9px, -36px) scale(0.75);
+//     }
+//   }
+
+//   input:focus ~ fieldset legend,
+//   input:not(:placeholder-shown) ~ fieldset legend {
+//     max-width: 100%;
+//     transition: max-width 100ms cubic-bezier(0, 0, 0.2, 1);
+//   }
+
+//   input:focus ~ fieldset,
+//   input:not(:placeholder-shown) ~ fieldset {
+//     border-color: rgb(19, 241, 149);
+//   }
+// }
+
+.input__container {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+
+  input {
+    border: none;
+    padding: 12px 16px;
+    border-radius: 4px;
+    color: #fff;
+  }
+
+  input:hover ~ fieldset {
+    border-color: rgb(19, 241, 149);
+  }
+
+  fieldset {
+    position: absolute;
+    width: 100%;
+    height: 54px;
+    top: 0;
+    left: 0;
+    text-align: left;
+    inset: -5px 0px 0px;
+    border-radius: inherit;
+    margin: 0px;
+    padding: 0px 8px;
+    pointer-events: none;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    min-width: 0%;
+    border-color: rgba(0, 0, 0, 0.23);
+    transition: all 0.2s linear;
+  }
+
+  legend {
+    float: unset;
+    width: auto;
+    display: block;
+    height: 11px;
+    font-size: 0.75em;
+    visibility: hidden;
+    max-width: 0.01px;
+    overflow: hidden;
+    padding: 0px;
+    transition: max-width 50ms cubic-bezier(0, 0, 0.2, 1);
+    white-space: nowrap;
+    text-align: left;
+
+    span {
+      padding-left: 5px;
+      padding-right: 5px;
+      display: inline-block;
+      opacity: 0 !important;
+      visibility: visible;
+      color: #fff;
+    }
+  }
+
+  .input__form-label {
+    color: rgb(122, 136, 149);
+    text-align: left;
+    font-size: 16px;
+    transform: translate(16px, -12px) scale(1);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+    transition: all 0.2s ease;
+  }
+
+  input:focus ~ .input__form-label {
+    transform: translate(3px, -36px) scale(0.75);
+    color: #fff;
+    z-index: 1;
+
+    &.email {
+      transform: translate(-5px, -36px) scale(0.75);
+    }
+    &.email-sm {
+      transform: translate(8px, -36px) scale(0.75);
+    }
+    &.email-big {
+      transform: translate(-9px, -36px) scale(0.75);
+    }
+  }
+
+  input.has-value ~ .input__form-label {
+    transform: translate(3px, -36px) scale(0.75);
+    color: #fff;
+    z-index: 1;
+
+    &.email {
+      transform: translate(-5px, -36px) scale(0.75);
+    }
+    &.email-sm {
+      transform: translate(8px, -36px) scale(0.75);
+    }
+    &.email-big {
+      transform: translate(-9px, -36px) scale(0.75);
+    }
+  }
+
+  /* Focus holatida legend */
+  input:focus ~ fieldset legend {
+    max-width: 100%;
+    transition: max-width 100ms cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  /* Qiymat mavjud bo'lsa legend */
+  input.has-value ~ fieldset legend {
+    max-width: 100%;
+    transition: max-width 100ms cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  input:focus ~ fieldset legend span,
+  input.has-value ~ fieldset legend span {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    left: 0;
+  }
+
+  input:focus ~ fieldset,
+  input.has-value ~ fieldset {
+    border-color: rgb(19, 241, 149);
+  }
+}
+
+.input__container input {
+  width: 100%;
+}

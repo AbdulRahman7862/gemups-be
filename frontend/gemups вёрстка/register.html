@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GEMUPS</title>
+  <link rel="icon" href="./images/icon/infinite.svg">
+  <!-- swiper css -->
+  <link rel="stylesheet" href="libs/swiper-bundle.min.css">
+  <!-- fonts -->
+  <link rel="stylesheet" href="fonts/inter/stylesheet.css">
+  <link rel="stylesheet" href="fonts/roboto/stylesheet.css">
+  <link rel="stylesheet" href="fonts/montserrat/stylesheet.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper register__page">
+
+    <main>
+      <div class="sidebar">
+        <button class="sidebar__open-btn">
+          <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-q7mezt" focusable="false" aria-hidden="true"
+            viewBox="0 0 24 24" data-testid="MenuIcon">
+            <path d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z" fill="#9BA4AB"></path>
+          </svg>
+        </button>
+        <div class="sidebar__header">
+          <div class="logo">
+            <img src="images/icon/infinite.svg" alt="">
+            <span class="logo__text"><span class="green__text">Gem</span>UPs</span>
+          </div>
+          <div class="flex__box header__dropdown-toggle header__language lang__media">
+            <span class="header__right-text lang__text">EN</span>
+            <img src="images/icon/arrow-down.svg" alt="arrow-down">
+            <ul class="header__dropdown lang">
+              <li class="lang__item active">EN</li>
+              <li class="lang__item">00</li>
+              <li class="lang__item">22</li>
+              <li class="lang__item">33</li>
+              <li class="lang__item">44</li>
+              <li class="lang__item">55</li>
+              <li class="lang__item">66</li>
+              <li class="lang__item">33</li>
+              <li class="lang__item">00</li>
+            </ul>
+          </div>
+          <button class="sidebar__btn">
+            <img src="images/icon/menu.svg" alt="">
+          </button>
+          <button class="close__sidebar-btn">
+            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-vh810p" focusable="false" aria-hidden="true"
+              viewBox="0 0 24 24" data-testid="CloseIcon">
+              <path
+                d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                fill="#9BA4AB"></path>
+            </svg>
+          </button>
+        </div>
+        <nav>
+          <div>
+            <h3>Menu</h3>
+            <ul class="sidebar__nav">
+              <li class="sidebar__nav-item">
+                <a class="sidebar__nav-link active" href="#!">
+                  <div class="icon">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16 2V4H12V2H16ZM6 2V8H2V2H6ZM16 10V16H12V10H16ZM6 14V16H2V14H6ZM18 0H10V6H18V0ZM8 0H0V10H8V0ZM18 8H10V18H18V8ZM8 12H0V18H8V12Z"
+                        fill="#7A8895" />
+                    </svg>
+                  </div>
+                  <span>KYC Service</span>
+                </a>
+              </li>
+              <li class="sidebar__nav-item">
+                <div class="sidebar__nav-link parent dropdown-toggle">
+                  <div class="left__box">
+                    <div class="icon">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.67 13.13C18.04 14.06 19 15.32 19 17V20H23V17C23 14.82 19.43 13.53 16.67 13.13Z"
+                          fill="#7A8895" />
+                        <path
+                          d="M15 12C17.21 12 19 10.21 19 8C19 5.79 17.21 4 15 4C14.53 4 14.09 4.1 13.67 4.24C14.5 5.27 15 6.58 15 8C15 9.42 14.5 10.73 13.67 11.76C14.09 11.9 14.53 12 15 12Z"
+                          fill="#7A8895" />
+                        <path
+                          d="M9 12C11.21 12 13 10.21 13 8C13 5.79 11.21 4 9 4C6.79 4 5 5.79 5 8C5 10.21 6.79 12 9 12ZM9 6C10.1 6 11 6.9 11 8C11 9.1 10.1 10 9 10C7.9 10 7 9.1 7 8C7 6.9 7.9 6 9 6Z"
+                          fill="#7A8895" />
+                        <path
+                          d="M9 13C6.33 13 1 14.34 1 17V20H17V17C17 14.34 11.67 13 9 13ZM15 18H3V17.01C3.2 16.29 6.3 15 9 15C11.7 15 14.8 16.29 15 17V18Z"
+                          fill="#7A8895" />
+                      </svg>
+                    </div>
+                    <span>Accounts</span>
+                  </div>
+                  <div class="arrow__icon">
+                    <img src="images/icon/arrow-down-2.svg" alt="">
+                  </div>
+                </div>
+                <div class="social__media dropdown">
+                  <a href="#!">
+                    <div class="img__box">
+                      <img src="images/icon/outlook.svg" alt="">
+                    </div>
+                    <span>Outlook</span>
+                  </a>
+                  <a href="#!">
+                    <div class="img__box">
+                      <img src="images/icon/discord.svg" alt="">
+                    </div>
+                    <span>Discord</span>
+                  </a>
+                  <a href="#!">
+                    <div class="img__box">
+                      <img src="images/icon/twitter.svg" alt="">
+                    </div>
+                    <span>Twitter</span>
+                  </a>
+                  <a href="#!">
+                    <div class="img__box">
+                      <img src="images/icon/telegram.svg" alt="">
+                    </div>
+                    <span>Telegram</span>
+                  </a>
+                  <a href="#!">
+                    <div class="img__box">
+                      <img src="images/icon/gmail.svg" alt="">
+                    </div>
+                    <span>Gmail</span>
+                  </a>
+                  <a href="#!">
+                    <div class="img__box">
+                      <img src="images/icon/instagram.svg" alt="">
+                    </div>
+                    <span>Instagram</span>
+                  </a>
+                  <a href="#!">
+                    <div class="img__box">
+                      <img src="images/icon/tiktok.svg" alt="">
+                    </div>
+                    <span>TikTok</span>
+                  </a>
+                  <a href="#!">
+                    <div class="img__box">
+                      <img src="images/icon/facebook.svg" alt="">
+                    </div>
+                    <span>Facebook</span>
+                  </a>
+                </div>
+              </li>
+              <li class="sidebar__nav-item">
+                <a class="sidebar__nav-link " href="#!">
+                  <div class="icon">
+                    <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8 0L0 3V9.09C0 14.14 3.41 18.85 8 20C12.59 18.85 16 14.14 16 9.09V3L8 0ZM14 9.09C14 13.09 11.45 16.79 8 17.92C4.55 16.79 2 13.1 2 9.09V4.39L8 2.14L14 4.39V9.09Z"
+                        fill="#7A8895" />
+                    </svg>
+                  </div>
+                  <span>Proxy</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>General</h3>
+            <ul class="sidebar__nav">
+              <li class="sidebar__nav-item">
+                <a class="sidebar__nav-link" href="#!">
+                  <div class="icon">
+                    <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12.5 0C7.53 0 3.5 4.03 3.5 9H0.5L4.39 12.89L4.46 13.03L8.5 9H5.5C5.5 5.13 8.63 2 12.5 2C16.37 2 19.5 5.13 19.5 9C19.5 12.87 16.37 16 12.5 16C10.57 16 8.82 15.21 7.56 13.94L6.14 15.36C7.77 16.99 10.01 18 12.5 18C17.47 18 21.5 13.97 21.5 9C21.5 4.03 17.47 0 12.5 0ZM11.5 5V10L15.75 12.52L16.52 11.24L13 9.15V5H11.5Z"
+                        fill="#7A8895" />
+                    </svg>
+                  </div>
+                  <span>History</span>
+                </a>
+              </li>
+              <li class="sidebar__nav-item">
+                <a class="sidebar__nav-link" href="#!">
+                  <div class="icon">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9 16H11V14H9V16ZM10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18ZM10 4C7.79 4 6 5.79 6 8H8C8 6.9 8.9 6 10 6C11.1 6 12 6.9 12 8C12 10 9 9.75 9 13H11C11 10.75 14 10.5 14 8C14 5.79 12.21 4 10 4Z"
+                        fill="#7A8895" />
+                    </svg>
+                  </div>
+                  <span>Help</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="main__container">
+        <div class="container h-100">
+
+          <header class="header">
+            <div class="header__container">
+              <div class="header__logo-box">
+                <img src="images/icon/infinite.svg" alt="">
+              </div>
+              <ul class="breadcrump media__none-breadcrump">
+                <li>
+                  <a href="#!">Home</a>
+                </li>
+                <li class="icon">
+                  <svg width="20px" height="20px" class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-vh810p"
+                    focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="NavigateNextIcon">
+                    <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="#7A8895"></path>
+                  </svg>
+                </li>
+                <li>
+                  <a class="active" href="#!">Register</a>
+                </li>
+              </ul>
+              <div class="header__right">
+                <div class="header__right-box parent">
+                  <div class="flex__box header__dropdown-toggle header__language">
+                    <span class="header__right-text lang__text">EN</span>
+                    <img src="images/icon/arrow-down.svg" alt="arrow-down">
+                    <ul class="header__dropdown lang">
+                      <li class="lang__item active">EN</li>
+                      <li class="lang__item">00</li>
+                      <li class="lang__item">22</li>
+                      <li class="lang__item">33</li>
+                      <li class="lang__item">44</li>
+                      <li class="lang__item">55</li>
+                      <li class="lang__item">66</li>
+                      <li class="lang__item">33</li>
+                      <li class="lang__item">00</li>
+                    </ul>
+                  </div>
+                  <a class="green-btn active" href="login.html">Login</a>
+                  <a class="green-btn" href="register.html">Register</a>
+                </div>
+                <button class="cart__box">
+                  <img src="images/icon/cart.svg" alt="">
+                </button>
+                <button class="sidebar__open-btn header__menu-btn">
+                  <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-q7mezt" focusable="false" aria-hidden="true"
+                    viewBox="0 0 24 24" data-testid="MenuIcon">
+                    <path d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z" fill="#fff"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </header>
+
+          <ul class="breadcrump media__block-breadcrump">
+            <li>
+              <a href="#!">Home</a>
+            </li>
+            <li class="icon">
+              <svg width="20px" height="20px" class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-vh810p"
+                focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="NavigateNextIcon">
+                <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="#7A8895"></path>
+              </svg>
+            </li>
+            <li>
+              <a class="active" href="#!">Register</a>
+            </li>
+          </ul>
+          <div class="form login__form">
+
+            <h2 class="form__title">Register</h2>
+            <div class="flex__box">
+              <div class="input__container">
+                <input class="form-control" type="text" placeholder="">
+                <label class="input__form-label">Username</label>
+                <fieldset>
+                  <legend>
+                    <span>Username</span>
+                  </legend>
+                </fieldset>
+              </div>
+              <div class="input__container">
+                <input class="form-control" type="email" placeholder="">
+                <label class="input__form-label email-sm">Email</label>
+                <fieldset>
+                  <legend>
+                    <span>Email</span>
+                  </legend>
+                </fieldset>
+              </div>
+              <div class="input__container">
+                <input class="form-control" type="password" placeholder="">
+                <label class="input__form-label">Password</label>
+                <fieldset>
+                  <legend>
+                    <span>Password</span>
+                  </legend>
+                </fieldset>
+              </div>
+              <div class="input__container">
+                <input class="form-control" type="text" placeholder="">
+                <label class="input__form-label email-big">Referral Code (optional)</label>
+                <fieldset>
+                  <legend>
+                    <span>Referral Code (optional)</span>
+                  </legend>
+                </fieldset>
+              </div>
+              <button class="green-btn">Register</button>
+              <a class="link__text" href="login.html">Already have an account ?</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+
+  </div>
+
+  <!-- js -->
+  <script src="./libs/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
